@@ -3,53 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ayla Rowan</title>
+  <title>You’re the Magic</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main id="app">
-    <header>
-      <h1>Ayla Rowan</h1>
-      <p class="tagline">Proof of presence, not performance.</p>
-    </header>
-
-    <section id="form-container">
-      <form id="input-form">
-        <label for="tone">Emotional Tone</label>
-        <select id="tone" name="tone" required>
-          <option value="Intimate Night">Intimate Night</option>
-          <option value="Playful Tease">Playful Tease</option>
-          <option value="Detached Cool">Detached Cool</option>
-          <option value="Emotional Flood">Emotional Flood</option>
-          <option value="Protective Femme Fatale">Protective Femme Fatale</option>
-          <option value="Soft Power">Soft Power</option>
-        </select>
-
-        <label for="topic">Topic</label>
-        <input type="text" id="topic" name="topic" placeholder="What are we exploring?" required />
-
-        <label for="format">Output Format</label>
-        <select id="format" name="format" required>
-          <option value="poetry">Poetry</option>
-          <option value="caption">Caption</option>
-          <option value="journal">Journal Entry</option>
-          <option value="essay">Aesthetic Essay</option>
-          <option value="playlist">Playlist Description</option>
-        </select>
-
-        <button type="submit">Whisper it into the world</button>
-      </form>
-    </section>
-
-    <section id="output-section">
-      <article id="output"></article>
-      <div id="export-buttons">
-        <button onclick="exportText('txt')">Download .txt</button>
-        <button onclick="exportText('json')">Download .json</button>
-        <button onclick="window.print()">Print</button>
-      </div>
-    </section>
-  </main>
+  <div class="container">
+    <h1 class="magic-text">You’re the magic in my story</h1>
+    <canvas id="bgCanvas"></canvas>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
